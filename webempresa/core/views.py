@@ -2,22 +2,22 @@ from django.shortcuts import render, HttpResponse
 
 # Create your views here.
 def home(requets):
-    return HttpResponse('inicio')
+    return render(requets,'core/home.html')
 
 def about(requets):
-    return HttpResponse('About')
+    return render(requets,'core/about.html')
 
 def services(requets):
-    return HttpResponse('Services')
+    return render(requets,'core/services.html')
 
 def store(requets):
-    return HttpResponse('Store')
+    return render(requets,'core/store.html')
 
 def contact(requets):
-    return HttpResponse('Contactsto')
+    return render(requets,'core/contact.html')
 
 def blog(requets):
-    return HttpResponse('blog')
+    return render(requets,'core/blog.html')
 
 def sample(requets):
-    return HttpResponse('Pagina de prueba')
+    return render(requets,'core/sample.html')
